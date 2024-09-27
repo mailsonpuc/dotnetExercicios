@@ -7,20 +7,17 @@ namespace app.Models
 {
     public class SucessorEantecessor
     {
-        public SucessorEantecessor(int _numero)
-        {
-            Numero = _numero;
 
+        public int Sucessor(int num1){
+            return num1 + 1;
         }
 
 
-        public int Numero { get; set; }
-
-        public void Verificar(){
-            var antecessor = Numero - 1;
-            var sucessor = Numero + 1;
-
-            Console.WriteLine($"Analizando o número {Numero} seu antecessor e {antecessor} e o sucessor é {sucessor}");
+         public int AnteCessor(int num1){
+            return num1 - 1;
         }
+
+
+
     }
 }
